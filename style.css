@@ -89,12 +89,9 @@ a:hover {
 }
 
 .hero-image img {
-  width: min(240px, 100%);
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 20px;
-  background: #eef2f4;
-  box-shadow: 0 10px 30px rgba(25, 35, 45, 0.08);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;      /* keeps it nicely filled */
+  object-position: center; /* adjust to 'center top' if needed */
 }
 
 section {

@@ -1,0 +1,188 @@
+:root {
+  --bg: #fcfcfb;
+  --text: #1f2933;
+  --muted: #5b6670;
+  --line: #dde4e7;
+  --accent: #214e74;
+  --card: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.7fr 0.8fr;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 56px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 5vw, 3.6rem);
+  line-height: 1.05;
+  margin: 0 0 18px;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: 1.45rem;
+  margin: 0 0 22px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+h3 {
+  margin: 0 0 4px;
+  font-size: 1.02rem;
+}
+
+.intro {
+  margin: 0 0 14px;
+  max-width: 62ch;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-top: 22px;
+}
+
+.links a,
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.links a:hover,
+a:hover {
+  text-decoration: underline;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: min(240px, 100%);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 20px;
+  background: #eef2f4;
+  box-shadow: 0 10px 30px rgba(25, 35, 45, 0.08);
+}
+
+section {
+  margin-bottom: 44px;
+}
+
+.publication-list {
+  display: grid;
+  gap: 18px;
+}
+
+.publication,
+.item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px 20px;
+}
+
+.meta {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin: 10px 0 0;
+}
+
+.pub-links a {
+  font-size: 0.92rem;
+}
+
+.publication p,
+.item p {
+  margin: 0;
+}
+
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.year {
+  color: var(--muted);
+  font-size: 0.95rem;
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+footer {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding: 32px 18px 56px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-image {
+    order: -1;
+    justify-content: flex-start;
+  }
+
+  .hero-image img {
+    width: 180px;
+  }
+
+  .item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}

@@ -7,9 +7,13 @@
   --card: #ffffff;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -86,12 +90,17 @@ a:hover {
 .hero-image {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .hero-image img {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;      /* keeps it nicely filled */
-  object-position: center; /* adjust to 'center top' if needed */
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 10px 30px rgba(25, 35, 45, 0.08);
 }
 
 section {
@@ -176,6 +185,7 @@ footer {
 
   .hero-image img {
     width: 180px;
+    height: 180px;
   }
 
   .item {

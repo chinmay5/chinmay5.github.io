@@ -66,3 +66,22 @@ p{margin:0 0 1rem}.eyebrow,.kicker{font-size:.75rem;font-weight:760;letter-spaci
 .metric-row .metric-label{color:var(--ink);font-size:.84rem;font-weight:700}
 @media(max-width:940px){.research-flow{flex-wrap:wrap;gap:8px}.research-flow .flow-step{flex:1 1 25%;min-width:140px}.research-flow .flow-arrow{display:none}}
 @media(max-width:570px){.research-flow{padding:12px;display:grid;grid-template-columns:1fr;gap:7px}.research-flow .flow-step{flex:auto;min-width:0}.research-flow .flow-arrow{display:none}.research-flow.is-compact{display:grid;grid-template-columns:1fr;gap:6px}.research-flow.is-compact .flow-step{padding:10px}.metric-row{grid-template-columns:1fr}.project-tile-visual{padding:9px}}
+
+/* Balanced research portfolio layout */
+.hero{border-bottom:0;padding-bottom:38px}
+#publications{margin-top:5px}
+.project-tile .research-flow{min-width:0}
+.project-tile .research-flow.is-compact{background:linear-gradient(135deg,#eef8fa,#f6f8ff);min-height:200px;align-items:center}
+.project-tile .research-flow.is-compact .flow-step{background:#fff}
+.research-flow.vesselformer-flow{background:linear-gradient(120deg,#f0f7fb,#edf8f4)}
+.research-flow.vitae-flow{background:linear-gradient(120deg,#f3f6fd,#edf8f9)}
+.research-flow .flow-step .flow-icon{font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+.research-flow .flow-step strong{overflow-wrap:break-word}
+.research-flow .flow-step{word-break:normal}
+.paper-method-note{margin:14px 0 0;color:var(--muted);font-size:.83rem;text-align:center}
+.project-method-detail{border:1px solid var(--line);border-radius:12px;background:#fff;padding:22px 25px;margin-top:18px}
+.project-method-detail h3{margin:0 0 8px;font-size:1.01rem}
+.project-method-detail p{margin:0;font-size:.91rem}
+.project-nav-papers{margin:16px auto 0;text-align:center;font-size:.83rem;color:var(--muted)}
+.project-nav-papers a{font-weight:650}
+@media(max-width:760px){.hero{padding-bottom:30px}.project-tile .research-flow.is-compact{min-height:auto}}

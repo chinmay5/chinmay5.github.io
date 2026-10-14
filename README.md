@@ -2,24 +2,24 @@
 
 Personal academic website hosted with GitHub Pages.
 
-## Site structure
+## Structure
 
-- `index.html` — homepage
-- `style.css` — shared website styles
+- `index.html` — homepage and publications
+- `style.css` — shared styles
 - `projects/index.html` — project directory
 - `projects/` — individual research project pages
-- `assets/` — images, CV, and other static files
+- `assets/` — static assets
 
 ## Local preview
 
-Run a local web server from the repository root:
+From the repository root, run:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000`.
+Open `http://localhost:8000` in a web browser.
 
 ## Deployment
 
-The website is deployed through GitHub Pages from the repository's publishing branch.
+Changes are published using GitHub Pages from the configured publishing branch.

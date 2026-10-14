@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f9fafb">
+<meta name="description" content="VesselFormer: Towards Complete 3D Vessel Graph Generation from Images — research project page and publication resources.">
+<meta property="og:title" content="VesselFormer | Research project">
+<meta property="og:description" content="Directly recovering compact 3D vessel graphs and vessel radii from volumetric images, then combining patch-level graphs into a complete network.">
+<title>VesselFormer | Chinmay Prabhakar</title>
+<link rel="stylesheet" href="../../style.css?v=20261014d">
+</head>
+<body>
+<nav class="nav wrap" aria-label="Main navigation"><a class="brand" href="../../index.html">Chinmay Prabhakar<span class="brand-dot">.</span></a><div class="nav-links"><a href="../../index.html">Home</a><a href="../index.html">Projects</a><a href="../../index.html#publications">Publications</a><a href="#citation">Citation</a></div></nav>
+<main class="wrap project-layout">
+<header class="project-intro">
+<p class="eyebrow">MIDL 2023 · PMLR Vol. 227</p>
+<h1 class="miccai-title">VesselFormer</h1>
+<p class="project-subtitle">Towards Complete 3D Vessel Graph Generation from Images</p>
+<p class="project-authors"><a href="../../index.html">Chinmay Prabhakar</a> · Suprosanna Shit · Johannes C. Paetzold · Ivan Ezhov · Rajat Koner · Hongwei Li · Florian Sebastian Kofler · Bjoern Menze</p>
+<div class="project-buttons"><a class="primary-button" href="https://proceedings.mlr.press/v227/prabhakar24a.html" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://proceedings.mlr.press/v227/prabhakar24a/prabhakar24a.pdf" target="_blank" rel="noopener noreferrer">PDF ↗</a><a href="https://github.com/chinmay5/vesselformer" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="#citation">BibTeX ↓</a></div>
+<p class="project-nav-papers">Presented at MIDL 2023; indexed in the PMLR 227 proceedings listing.</p>
+</header>
+<section class="project-overview" aria-label="Method summary"><p class="kicker">Method at a glance</p><div class="research-flow vesselformer-flow" aria-label="Conceptual steps in the VesselFormer approach" role="img"><div class="flow-step"><span class="flow-icon" aria-hidden="true">▦</span><strong>3D image</strong><span>Volume patches</span></div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-step"><span class="flow-icon" aria-hidden="true">◈</span><strong>Transformer</strong><span>Image features</span></div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-step"><span class="flow-icon" aria-hidden="true">⠿</span><strong>Vessel graph</strong><span>Nodes and edges</span></div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-step"><span class="flow-icon" aria-hidden="true">◉</span><strong>Radius token</strong><span>Edge radii</span></div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-step"><span class="flow-icon" aria-hidden="true">⌘</span><strong>VesselMerger</strong><span>Complete graph</span></div></div><p class="fig-caption">Illustrative summary of the published VesselFormer pipeline; not a reproduction of the paper figure. See Figures 1–3 in the paper for the original diagrams. <a href="https://proceedings.mlr.press/v227/prabhakar24a/prabhakar24a.pdf" target="_blank" rel="noopener noreferrer">Original paper ↗</a></p></section>
+<section class="project-content" id="overview"><p class="kicker">Overview</p><h2>Why this work matters</h2><p class="large-lead">Turning volumetric images into useful vascular graphs typically involves segmentation, skeletonization and graph pruning. VesselFormer instead learns to predict graph structure and radius-aware edge attributes directly from image content, then assembles patch-wise predictions into a full 3D graph.</p></section>
+<section class="project-content"><p class="kicker">Approach</p><h2>How the method works</h2><div class="step-grid"><article><span>01</span><h3>Patch-level image features</h3><p>Extract features from 3D image patches for a transformer-based image-to-graph model.</p></article>
+<article><span>02</span><h3>Structure and radii</h3><p>Learn node, connectivity and radius predictions, including a dedicated radius token.</p></article>
+<article><span>03</span><h3>VesselMerger</h3><p>Combine overlapping graph patches into a coherent graph across the full volume.</p></article></div></section>
+<section class="project-content"><p class="kicker">Research directions</p><h2>Contributions and applications</h2><div class="step-grid simple"><article><h3>End-to-end image-to-graph</h3><p>Avoid hand-crafted segmentation, skeletonization and pruning heuristics.</p></article>
+<article><h3>Radius-aware representations</h3><p>Predict edge attributes useful for downstream modeling, not only connectivity.</p></article>
+<article><h3>Volumetric scale</h3><p>Use patch-wise inference and graph merging to cover larger 3D image volumes.</p></article></div></section>
+<section class="project-content resources"><div><p class="kicker">Resources</p><h2>Paper and implementation</h2><p>Read the published paper for the full methodology, experimental evaluation, and original figures. The public GitHub repository includes the research code.</p></div><div class="resource-links"><a href="https://proceedings.mlr.press/v227/prabhakar24a.html" target="_blank" rel="noopener noreferrer">Published paper ↗</a><a href="https://proceedings.mlr.press/v227/prabhakar24a/prabhakar24a.pdf" target="_blank" rel="noopener noreferrer">PDF ↗</a><a href="https://github.com/chinmay5/vesselformer" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></div></section>
+<section class="project-content citation" id="citation"><div class="citation-heading"><div><p class="kicker">Reference</p><h2>Citation</h2></div><button type="button" class="copy-button" id="copy-citation">Copy BibTeX</button></div><pre class="bibtex" id="bibtex"><code>@InProceedings{pmlr-v227-prabhakar24a,
+  title = {Vesselformer: Towards Complete 3D Vessel Graph Generation from Images},
+  author = {Prabhakar, Chinmay and Shit, Suprosanna and Paetzold, Johannes C. and Ezhov, Ivan and Koner, Rajat and Li, Hongwei and Kofler, Florian Sebastian and Menze, Bjoern},
+  booktitle = {Medical Imaging with Deep Learning},
+  pages = {320--331},
+  year = {2024},
+  volume = {227},
+  series = {Proceedings of Machine Learning Research},
+  publisher = {PMLR},
+  url = {https://proceedings.mlr.press/v227/prabhakar24a.html}
+}</code></pre><p class="citation-note">Use the citation details from the publisher if the publication record is updated.</p></section>
+<p class="back-line"><a href="../index.html">← All projects</a></p>
+</main>
+<footer class="site-footer wrap"><span>© <span data-current-year>2026</span> Chinmay Prabhakar</span><a href="../../index.html">Home ↑</a></footer>
+<script>document.querySelectorAll('.remote-image').forEach(img=>{const frame=img.closest('.figure-frame');const fail=()=>frame?.classList.add('image-failed');const load=()=>frame?.classList.add('image-ready');img.addEventListener('error',fail);img.addEventListener('load',load);if(img.complete){if(img.naturalWidth)load();else fail()}});document.querySelectorAll('.portrait img').forEach(img=>{img.addEventListener('error',()=>img.closest('.portrait')?.classList.add('image-failed'));if(img.complete&&!img.naturalWidth)img.closest('.portrait')?.classList.add('image-failed')});document.querySelectorAll('[data-current-year]').forEach(el=>el.textContent=new Date().getFullYear());</script>
+<script>document.getElementById('copy-citation').addEventListener('click',async function(){const el=document.querySelector('#bibtex code');const txt=el.textContent;try{await navigator.clipboard.writeText(txt);this.textContent='Copied';}catch(e){const sel=window.getSelection();const range=document.createRange();range.selectNodeContents(el);sel.removeAllRanges();sel.addRange(range);this.textContent='Select and copy';}})</script>
+</body></html>

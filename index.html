@@ -3,244 +3,200 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Chinmay Prabhakar — Ph.D. student at the University of Zurich working on machine learning, generative modeling, graph-based learning, and medical image analysis." />
-  <title>Chinmay Prabhakar</title>
+  <meta name="description" content="Chinmay Prabhakar — Ph.D. researcher at the University of Zurich working on medical image computing, vascular representations, generative modeling, and graph learning." />
+  <meta property="og:title" content="Chinmay Prabhakar | Research" />
+  <meta property="og:description" content="Medical image computing, vascular modeling, generative AI, and geometric deep learning." />
+  <title>Chinmay Prabhakar | Research</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page">
-    <header class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">Ph.D. Student · University of Zurich</p>
-        <h1>Chinmay Prabhakar</h1>
-        <p class="intro">
-          I am a Ph.D. student in the Department of Quantitative Biomedicine at the University of Zurich.
-          My research interests lie at the intersection of machine learning, graph-based modeling,
-          generative methods, and medical image analysis.
-        </p>
-        <p class="intro">
-          My recent work focuses on representation learning for vessels, self-supervised medical image representations,
-          vessel graph generation, and discrete diffusion models for biological graph modeling.
-        </p>
-        <nav class="links" aria-label="Profile links">
-          <a href="mailto:chinmay.prabhakar@uzh.ch">Email</a>
-          <a href="https://github.com/chinmay5" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/chinmay-prabhakar-0b792389/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://scholar.google.com/citations?user=RDR0FjUAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-          <a href="assets/cv.pdf" target="_blank" rel="noreferrer">CV</a>
-        </nav>
+<div class="page">
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="wordmark" href="#top">CP<span class="wordmark-dot">.</span></a>
+    <div class="nav-items">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#about">Background</a>
+    </div>
+  </nav>
+  <header class="hero" id="top">
+    <div class="hero-text">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> Ph.D. Student · University of Zurich</p>
+      <h1>Chinmay <span>Prabhakar</span></h1>
+      <p class="hero-lead">Building representations and generative models for complex biomedical structures.</p>
+      <p class="intro">I am a Ph.D. student in the Department of Quantitative Biomedicine at the University of Zurich. My research lies at the intersection of <strong>medical image computing, geometric deep learning, and generative modeling</strong>, with a particular interest in vascular anatomy.</p>
+      <p class="intro">My work spans vessel tokenization, sparse volumetric representations, 3D graph generation, and self-supervised medical imaging.</p>
+      <nav class="links" aria-label="Profile links">
+        <a href="mailto:chinmay.prabhakar@uzh.ch">Email <span aria-hidden="true">↗</span></a>
+        <a href="https://scholar.google.com/citations?user=RDR0FjUAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/chinmay5" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="https://www.linkedin.com/in/chinmay-prabhakar-0b792389/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">CV <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+    <div class="hero-image"><img src="assets/profile.png" alt="Portrait of Chinmay Prabhakar" width="250" height="250" /></div>
+  </header>
+  <main>
+    <section class="featured" id="research" aria-labelledby="featured-title">
+      <div class="section-heading"><div><p class="section-kicker">RESEARCH HIGHLIGHT</p><h2 id="featured-title">Featured work</h2></div><a class="subtle-link" href="#publications">All publications <span aria-hidden="true">→</span></a></div>
+      <div class="featured-card">
+        <div class="featured-copy">
+          <div class="featured-eyebrow"><span class="badge-spotlight">✦ ECCV 2026 Spotlight</span></div>
+          <h3><a href="projects/vesseltok/">VesselTok</a></h3>
+          <p class="featured-subtitle">Tokenizing Vessel-like 3D Biomedical Graph Representations for Reconstruction and Generation</p>
+          <p class="featured-description">A compact latent representation for intricate vessel and airway structures, designed for faithful reconstruction and generative modeling.</p>
+          <a class="featured-cta" href="projects/vesseltok/">Explore project <span aria-hidden="true">↗</span></a>
+        </div>
+        <a class="featured-art" href="projects/vesseltok/" aria-label="Visit the VesselTok project page">
+          <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/chinmay5/vessel_tok/main/vesseltok_overview.png" alt="VesselTok method overview showing graph representations and generative modeling" />
+          <span class="feature-image-note">Research overview · VesselTok</span>
+        </a>
       </div>
-      <div class="hero-image">
-        <img src="assets/profile.png" alt="Portrait of Chinmay Prabhakar" />
+    </section>
+
+    <section id="publications" aria-labelledby="publication-title">
+      <div class="section-heading"><div><p class="section-kicker">SELECTED WORK</p><h2 id="publication-title">Publications</h2></div><p class="section-note">Select “View representative figure” to expand paper visuals.</p></div>
+      <div class="publication-list">
+<article class="publication publication-highlight">
+    <div class="pub-topline"><span class="pub-venue">ECCV 2026</span><span class="badge-spotlight">✦ Spotlight</span><span class="pub-year">2026</span></div>
+    <h3><a href="projects/vesseltok/">VesselTok: Tokenizing Vessel-like 3D Biomedical Graph Representations for Reconstruction and Generation</a></h3>
+    <p class="pub-desc">Learning compact tokens for intricate 3D vascular and airway graphs, enabling reconstruction, generation, and completion.</p>
+    <p class="pub-authors">C. Prabhakar, B. Wittmann, T. Amiranashvili, P. Büschl, E. de la Rosa, J. McGinnis, B. Wiestler, B. Menze, and S. Shit.</p>
+    <div class="pub-links"><a class="pub-link pub-link-primary" href="projects/vesseltok/">Project page <span aria-hidden="true">↗</span></a> <a class="pub-link" href="https://arxiv.org/abs/2603.18797" target="_blank" rel="noopener noreferrer">Paper</a> <a class="pub-link" href="https://github.com/chinmay5/vessel_tok" target="_blank" rel="noopener noreferrer">Code</a></div>
+    <details class="paper-preview"><summary><span>View representative figure</span><span class="preview-plus" aria-hidden="true">+</span></summary>
+      <figure class="preview-figure"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/chinmay5/vessel_tok/main/vesseltok_overview.png" alt="Representative figure for VesselTok: Tokenizing Vessel-like 3D Biomedical Graph Representations for Reconstruction and Generation" />
+      <figcaption>VesselTok overview from the official code repository: graph-informed tokenization and generative modeling.</figcaption></figure></details>
+  </article>
+<article class="publication">
+    <div class="pub-topline"><span class="pub-venue">arXiv 2026</span><span class="pub-year">2026</span></div>
+    <h3><a href="https://arxiv.org/abs/2605.01382" target="_blank" rel="noopener noreferrer">Sparse Representation Learning for Vessels</a></h3>
+    <p class="pub-desc">Sparse representation learning for organ-scale vessel structures with efficient reconstruction and generative modeling.</p>
+    <p class="pub-authors">C. Prabhakar, B. Wittmann, P. Büschl, H. B. Li, B. Menze, and S. Shit.</p>
+    <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2605.01382" target="_blank" rel="noopener noreferrer">Paper</a> <a class="pub-link" href="https://github.com/chinmay5/sparse_representation_learning_for_vessels" target="_blank" rel="noopener noreferrer">Code</a></div>
+    
+  </article>
+<article class="publication">
+    <div class="pub-topline"><span class="pub-venue">MICCAI 2025</span><span class="pub-year">2025</span></div>
+    <h3><a href="https://arxiv.org/abs/2507.04856" target="_blank" rel="noopener noreferrer">Semantically Consistent Discrete Diffusion for 3D Biological Graph Modeling</a></h3>
+    <p class="pub-desc">Discrete graph diffusion with semantic corrections for anatomically plausible vessels and airway structures.</p>
+    <p class="pub-authors">C. Prabhakar, S. Shit, T. Amiranashvili, H. B. Li, and B. Menze.</p>
+    <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2507.04856" target="_blank" rel="noopener noreferrer">Paper</a> <a class="pub-link" href="https://github.com/chinmay5/semantically_consistent_graph_generation" target="_blank" rel="noopener noreferrer">Code</a></div>
+    <details class="paper-preview"><summary><span>View representative figure</span><span class="preview-plus" aria-hidden="true">+</span></summary>
+      <figure class="preview-figure"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/chinmay5/semantically_consistent_graph_generation/main/static_resources/overview.png" alt="Representative figure for Semantically Consistent Discrete Diffusion for 3D Biological Graph Modeling" />
+      <figcaption>Method overview from the official MICCAI 2025 code repository.</figcaption></figure></details>
+  </article>
+<article class="publication">
+    <div class="pub-topline"><span class="pub-venue">MICCAI 2024</span><span class="pub-year">2024</span></div>
+    <h3><a href="https://arxiv.org/abs/2407.05842" target="_blank" rel="noopener noreferrer">3D Vessel Graph Generation Using Denoising Diffusion</a></h3>
+    <p class="pub-desc">A two-stage denoising diffusion model for synthesizing vascular graphs, including complex connectivity.</p>
+    <p class="pub-authors">C. Prabhakar, S. Shit, F. Musio, et al.</p>
+    <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2407.05842" target="_blank" rel="noopener noreferrer">Paper</a> <a class="pub-link" href="https://github.com/chinmay5/vessel_diffuse" target="_blank" rel="noopener noreferrer">Code</a></div>
+    <details class="paper-preview"><summary><span>View representative figure</span><span class="preview-plus" aria-hidden="true">+</span></summary>
+      <figure class="preview-figure"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/chinmay5/vessel_diffuse/main/static_resources/main_fig.png" alt="Representative figure for 3D Vessel Graph Generation Using Denoising Diffusion" />
+      <figcaption>Overview figure from the official MICCAI 2024 vessel diffusion repository.</figcaption></figure></details>
+  </article>
+<article class="publication">
+    <div class="pub-topline"><span class="pub-venue">MIDL · PMLR 2024</span><span class="pub-year">2024</span></div>
+    <h3><a href="https://proceedings.mlr.press/v227/prabhakar24a.html" target="_blank" rel="noopener noreferrer">VesselFormer: Towards Complete 3D Vessel Graph Generation from Images</a></h3>
+    <p class="pub-desc">Image-to-graph prediction with radius-aware tokens and reconstruction of full 3D vessel networks.</p>
+    <p class="pub-authors">C. Prabhakar, S. Shit, J. C. Paetzold, et al.</p>
+    <div class="pub-links"><a class="pub-link" href="https://proceedings.mlr.press/v227/prabhakar24a.html" target="_blank" rel="noopener noreferrer">Paper</a> <a class="pub-link" href="https://github.com/chinmay5/vesselformer" target="_blank" rel="noopener noreferrer">Code</a></div>
+    
+  </article>
+<article class="publication">
+    <div class="pub-topline"><span class="pub-venue">MIDL · PMLR 2024</span><span class="pub-year">2024</span></div>
+    <h3><a href="https://arxiv.org/abs/2301.07382" target="_blank" rel="noopener noreferrer">ViT-AE++: Improving Vision Transformer Autoencoder for Self-Supervised Medical Image Representations</a></h3>
+    <p class="pub-desc">Improving masked autoencoding through structural reconstruction and contrastive learning for medical images.</p>
+    <p class="pub-authors">C. Prabhakar, H. Li, J. Yang, S. Shit, B. Wiestler, and B. Menze.</p>
+    <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2301.07382" target="_blank" rel="noopener noreferrer">Paper</a> <a class="pub-link" href="https://github.com/chinmay5/vit_ae_plus_plus" target="_blank" rel="noopener noreferrer">Code</a></div>
+    
+  </article>
+<article class="publication">
+    <div class="pub-topline"><span class="pub-venue">MICCAI 2023</span><span class="pub-year">2023</span></div>
+    <h3><a href="https://arxiv.org/abs/2308.16863" target="_blank" rel="noopener noreferrer">Self-Pruning Graph Neural Network for Predicting Inflammatory Disease Activity in Multiple Sclerosis from Brain MR Images</a></h3>
+    <p class="pub-desc">Graph neural modeling of brain MR images for predicting inflammatory disease activity.</p>
+    <p class="pub-authors">C. Prabhakar, H. B. Li, J. C. Paetzold, et al.</p>
+    <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2308.16863" target="_blank" rel="noopener noreferrer">Paper</a></div>
+    
+  </article>
+<article class="publication">
+    <div class="pub-topline"><span class="pub-venue">PMLR 2022</span><span class="pub-year">2022</span></div>
+    <h3><a href="https://proceedings.mlr.press/v194/prabhakar22a.html" target="_blank" rel="noopener noreferrer">Structured Knowledge Graphs for Classifying Unseen Patterns in Radiographs</a></h3>
+    <p class="pub-desc">Knowledge-guided classification of previously unseen patterns in chest radiographs.</p>
+    <p class="pub-authors">C. Prabhakar, A. Sekuboyina, H. B. Li, et al.</p>
+    <div class="pub-links"><a class="pub-link" href="https://proceedings.mlr.press/v194/prabhakar22a.html" target="_blank" rel="noopener noreferrer">Paper</a> <a class="pub-link" href="https://github.com/chinmay5/ml-cxr-gzsl-kg" target="_blank" rel="noopener noreferrer">Code</a></div>
+    
+  </article>
       </div>
-    </header>
-
-    <main>
-      <section>
-        <h2>Selected Publications</h2>
-        <div class="publication-list">
-          <article class="publication">
-            <h3>
-              <a href="https://arxiv.org/abs/2605.01382" target="_blank" rel="noreferrer">
-                Sparse Representation Learning for Vessels
-              </a>
-            </h3>
-            <p class="meta">arXiv 2026</p>
-            <p>
-              C. Prabhakar, B. Wittmann, P. Büschl, H. B. Li, B. Menze, and S. Shit.
-            </p>
-            <div class="pub-links">
-              <a href="https://arxiv.org/abs/2605.01382" target="_blank" rel="noreferrer">arXiv</a>
-              <a href="https://arxiv.org/pdf/2605.01382.pdf" target="_blank" rel="noreferrer">PDF</a>
-            </div>
-          </article>
-
-          <article class="publication">
-            <h3>
-              <a href="https://arxiv.org/abs/2603.18797" target="_blank" rel="noreferrer">
-                VesselTok: Tokenizing Vessel-like 3D Biomedical Graph Representations for Reconstruction and Generation
-              </a>
-            </h3>
-            <p class="meta">ECCV 2026</p>
-            <p>
-              C. Prabhakar, B. Wittmann, T. Amiranashvili, P. Büschl, E. de la Rosa, J. McGinnis, B. Wiestler, B. Menze, and S. Shit.
-            </p>
-            <div class="pub-links">
-              <a href="https://arxiv.org/abs/2603.18797" target="_blank" rel="noreferrer">arXiv</a>
-              <a href="https://arxiv.org/pdf/2603.18797.pdf" target="_blank" rel="noreferrer">PDF</a>
-            </div>
-          </article>
-
-          <article class="publication">
-            <h3>
-              <a href="https://arxiv.org/abs/2507.04856" target="_blank" rel="noreferrer">
-                Semantically Consistent Discrete Diffusion for 3D Biological Graph Modeling
-              </a>
-            </h3>
-            <p class="meta">MICCAI 2025</p>
-            <p>
-              C. Prabhakar, S. Shit, T. Amiranashvili, H. B. Li, and B. Menze.
-            </p>
-            <div class="pub-links">
-              <a href="https://arxiv.org/abs/2507.04856" target="_blank" rel="noreferrer">arXiv</a>
-              <a href="https://arxiv.org/pdf/2507.04856.pdf" target="_blank" rel="noreferrer">PDF</a>
-            </div>
-          </article>
-
-          <article class="publication">
-            <h3>
-              <a href="https://openreview.net/forum?id=WAU2skP8TN" target="_blank" rel="noreferrer">
-                Vit-AE++: Improving Vision Transformer Autoencoder for Self-Supervised Medical Image Representations
-              </a>
-            </h3>
-            <p class="meta">MIDL 2024</p>
-            <p>
-              C. Prabhakar, H. Li, J. Yang, S. Shit, B. Wiestler, and B. Menze.
-            </p>
-            <div class="pub-links">
-              <a href="https://openreview.net/forum?id=WAU2skP8TN" target="_blank" rel="noreferrer">Paper</a>
-            </div>
-          </article>
-
-          <article class="publication">
-            <h3>
-              <a href="https://arxiv.org/abs/2407.05842" target="_blank" rel="noreferrer">
-                3D Vessel Graph Generation Using Denoising Diffusion
-              </a>
-            </h3>
-            <p class="meta">MICCAI 2024</p>
-            <p>
-              C. Prabhakar, S. Shit, F. Musio, et al.
-            </p>
-            <div class="pub-links">
-              <a href="https://arxiv.org/abs/2407.05842" target="_blank" rel="noreferrer">arXiv</a>
-              <a href="https://arxiv.org/pdf/2407.05842.pdf" target="_blank" rel="noreferrer">PDF</a>
-            </div>
-          </article>
-
-          <article class="publication">
-            <h3>
-              <a href="https://proceedings.mlr.press/v227/prabhakar24a.html" target="_blank" rel="noreferrer">
-                VesselFormer: Towards Complete 3D Vessel Graph Generation from Images
-              </a>
-            </h3>
-            <p class="meta">MIDL 2024</p>
-            <p>
-              C. Prabhakar, S. Shit, J. C. Paetzold, et al.
-            </p>
-            <div class="pub-links">
-              <a href="https://proceedings.mlr.press/v227/prabhakar24a.html" target="_blank" rel="noreferrer">Paper</a>
-              <a href="https://proceedings.mlr.press/v227/prabhakar24a/prabhakar24a.pdf" target="_blank" rel="noreferrer">PDF</a>
-            </div>
-          </article>
-
-          <article class="publication">
-            <h3>
-              <a href="https://link.springer.com/chapter/10.1007/978-3-031-43904-3_49" target="_blank" rel="noreferrer">
-                Self-Pruning Graph Neural Network for Predicting Inflammatory Disease Activity in Multiple Sclerosis from Brain MR Images
-              </a>
-            </h3>
-            <p class="meta">MICCAI 2023</p>
-            <p>
-              C. Prabhakar, H. B. Li, J. C. Paetzold, et al.
-            </p>
-            <div class="pub-links">
-              <a href="https://link.springer.com/chapter/10.1007/978-3-031-43904-3_49" target="_blank" rel="noreferrer">Paper</a>
-            </div>
-          </article>
-
-          <article class="publication">
-            <h3>
-              <a href="https://proceedings.mlr.press/v193/prabhakar22a.html" target="_blank" rel="noreferrer">
-                Structured Knowledge Graphs for Classifying Unseen Patterns in Radiographs
-              </a>
-            </h3>
-            <p class="meta">PMLR 2022</p>
-            <p>
-              C. Prabhakar, A. Sekuboyina, H. B. Li, et al.
-            </p>
-            <div class="pub-links">
-              <a href="https://proceedings.mlr.press/v193/prabhakar22a.html" target="_blank" rel="noreferrer">Paper</a>
-              <a href="https://proceedings.mlr.press/v193/prabhakar22a/prabhakar22a.pdf" target="_blank" rel="noreferrer">PDF</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>Education</h2>
-        <div class="timeline">
-          <div class="item">
-            <div class="year">2021 – present</div>
-            <div>
-              <h3>Ph.D., University of Zurich, Switzerland</h3>
-              <p>Department of Quantitative Biomedicine</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="year">2017 – 2020</div>
-            <div>
-              <h3>M.Sc. Informatics, Technical University of Munich, Germany</h3>
-              <p>Thesis: Natural Language Based 3D Object Localization in Volumetric Grids.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="year">2010 – 2014</div>
-            <div>
-              <h3>B.E. Computer Science, BIT Mesra, Ranchi, India</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Industry Experience</h2>
-        <div class="timeline">
-          <div class="item">
-            <div class="year">2018 – 2019</div>
-            <div>
-              <h3>Software Developer (Work Student), Intel</h3>
-              <p>Munich, Germany</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="year">2014 – 2017</div>
-            <div>
-              <h3>Analyst-System Developer, Verizon Data Services</h3>
-              <p>Hyderabad, India</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Service & Miscellaneous</h2>
-        <div class="timeline">
-          <div class="item">
-            <div class="year">2024 – 2025</div>
-            <div>
-              <h3>Co-organizer</h3>
-              <p>TopCoW and TopBrain MICCAI challenges</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="year">2022</div>
-            <div>
-              <h3>Tutor</h3>
-              <p>EXCITE Summer School — Applications of Machine Learning in Medical Domain</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>© <span id="year"></span> Chinmay Prabhakar</p>
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    </section>
+    <div id="about" class="about-sections">
+<section class="secondary-section">
+<h2>Education</h2>
+<div class="timeline">
+<div class="item">
+<div class="year">2021 – present</div>
+<div>
+<h3>Ph.D., University of Zurich, Switzerland</h3>
+<p>Department of Quantitative Biomedicine</p>
+</div>
+</div>
+<div class="item">
+<div class="year">2017 – 2020</div>
+<div>
+<h3>M.Sc. Informatics, Technical University of Munich, Germany</h3>
+<p>Thesis: Natural Language Based 3D Object Localization in Volumetric Grids.</p>
+</div>
+</div>
+<div class="item">
+<div class="year">2010 – 2014</div>
+<div>
+<h3>B.E. Computer Science, BIT Mesra, Ranchi, India</h3>
+</div>
+</div>
+</div>
+</section>
+<section class="secondary-section">
+<h2>Industry Experience</h2>
+<div class="timeline">
+<div class="item">
+<div class="year">2018 – 2019</div>
+<div>
+<h3>Software Developer (Work Student), Intel</h3>
+<p>Munich, Germany</p>
+</div>
+</div>
+<div class="item">
+<div class="year">2014 – 2017</div>
+<div>
+<h3>Analyst-System Developer, Verizon Data Services</h3>
+<p>Hyderabad, India</p>
+</div>
+</div>
+</div>
+</section>
+<section class="secondary-section">
+<h2>Service &amp; Miscellaneous</h2>
+<div class="timeline">
+<div class="item">
+<div class="year">2024 – 2025</div>
+<div>
+<h3>Co-organizer</h3>
+<p>TopCoW and TopBrain MICCAI challenges</p>
+</div>
+</div>
+<div class="item">
+<div class="year">2022</div>
+<div>
+<h3>Tutor</h3>
+<p>EXCITE Summer School — Applications of Machine Learning in Medical Domain</p>
+</div>
+</div>
+</div>
+</section>
+    </div>
+  </main>
+  <footer><span>© <span id="year">2026</span> Chinmay Prabhakar</span><a href="#top">Back to top ↑</a></footer>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

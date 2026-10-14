@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VesselTok — ECCV 2026 Spotlight project page. Tokenizing 3D vessel-like biomedical graphs for reconstruction and generative modeling." />
+  <meta property="og:title" content="VesselTok | ECCV 2026 Spotlight" />
+  <meta property="og:description" content="Compact latent tokens for complex 3D vascular and airway graphs." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/chinmay5/vessel_tok/main/vesseltok_overview.png" />
+  <title>VesselTok | ECCV 2026 Spotlight</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+<div class="page project-page" id="top">
+  <nav class="site-nav" aria-label="Project navigation">
+    <a class="wordmark" href="../../">CP<span class="wordmark-dot">.</span></a>
+    <div class="nav-items"><a href="../../">Home</a><a href="../../#publications">Publications</a><a href="#citation">Citation</a></div>
+  </nav>
+  <main>
+    <header class="project-hero">
+      <a class="breadcrumb" href="../../">← Back to homepage</a>
+      <p class="project-venue"><span class="badge-spotlight">✦ ECCV 2026 Spotlight</span></p>
+      <h1>VesselTok</h1>
+      <p class="project-title-sub">Tokenizing Vessel-like 3D Biomedical Graph Representations for Reconstruction and Generation</p>
+      <p class="project-authors"><a href="../../">Chinmay Prabhakar</a> · Bastian Wittmann · Tamaz Amiranashvili · Paul Büschl · Ezequiel de la Rosa · Julian McGinnis · Benedikt Wiestler · Bjoern Menze · Suprosanna Shit</p>
+      <div class="project-actions">
+        <a class="action-main" href="https://arxiv.org/abs/2603.18797" target="_blank" rel="noopener noreferrer">Read paper ↗</a>
+        <a href="https://arxiv.org/pdf/2603.18797" target="_blank" rel="noopener noreferrer">PDF ↗</a>
+        <a href="https://github.com/chinmay5/vessel_tok" target="_blank" rel="noopener noreferrer">Code ↗</a>
+        <a href="https://huggingface.co/datasets/chinmay55/VesselTok-data" target="_blank" rel="noopener noreferrer">Data ↗</a>
+      </div>
+    </header>
+
+    <section class="project-figure-block" aria-label="VesselTok overview figure">
+      <figure class="project-figure">
+        <img src="https://raw.githubusercontent.com/chinmay5/vessel_tok/main/vesseltok_overview.png" alt="Overview of the VesselTok approach with centerline graph tokenization, implicit reconstruction, and latent generative modeling" decoding="async" />
+        <figcaption>VesselTok overview. Figure hosted in the <a href="https://github.com/chinmay5/vessel_tok" target="_blank" rel="noopener noreferrer">official code repository</a>.</figcaption>
+      </figure>
+    </section>
+
+    <section class="project-summary">
+      <p class="section-kicker">IN ONE MINUTE</p>
+      <h2>The central idea</h2>
+      <p class="summary-lead">Vascular anatomy is geometrically detailed and topologically complex. VesselTok learns a compact, tokenized representation of vessel-like 3D graphs, enabling generative modeling without reducing the problem to a small collection of branches.</p>
+    </section>
+
+    <section class="project-details">
+      <p class="section-kicker">METHOD</p>
+      <h2>From centerlines to a generative latent space</h2>
+      <div class="method-grid">
+        <article class="method-card"><span class="method-number">01</span><h3>Tokenize anatomy</h3><p>Encode centerline points with pseudo-radius information into a learned latent token set using an implicit-function autoencoder.</p></article>
+        <article class="method-card"><span class="method-number">02</span><h3>Reconstruct structure</h3><p>Decode the tokens into an occupancy representation and recover a 3D graph representation of the underlying vessel-like structure.</p></article>
+        <article class="method-card"><span class="method-number">03</span><h3>Model and complete</h3><p>Learn generative priors with latent diffusion and investigate conditional completion with flow matching in the same representation space.</p></article>
+      </div>
+    </section>
+
+    <section class="project-details">
+      <p class="section-kicker">APPLICATIONS</p>
+      <h2>What the representation enables</h2>
+      <div class="application-grid">
+        <div><h3>Across anatomies</h3><p>Experiments span airway and vascular structures, including brain and lung networks.</p></div>
+        <div><h3>Generative modeling</h3><p>Learn distributions of realistic vessel-like geometries in a compact latent space.</p></div>
+        <div><h3>Structural completion</h3><p>Use learned representations in downstream tasks including link prediction and point-cloud infilling.</p></div>
+      </div>
+    </section>
+
+    <section class="resource-panel">
+      <div><p class="section-kicker">REPRODUCIBILITY</p><h2>Explore the resources</h2><p>The public repository includes the training and evaluation pipeline, while the dataset release provides preprocessed centerline data. See the repository for checkpoint setup and usage details.</p></div>
+      <div class="resource-buttons"><a href="https://github.com/chinmay5/vessel_tok" target="_blank" rel="noopener noreferrer">View GitHub ↗</a><a href="https://huggingface.co/datasets/chinmay55/VesselTok-data" target="_blank" rel="noopener noreferrer">View dataset ↗</a></div>
+    </section>
+
+    <section class="citation-section" id="citation">
+      <p class="section-kicker">REFERENCE</p>
+      <div class="citation-header"><h2>How to cite</h2><button type="button" class="copy-button" id="copy-bibtex">Copy BibTeX</button></div>
+      <pre id="bibtex"><code>@inproceedings{prabhakar2026vesseltok,
+  title = {VesselTok: Tokenizing Vessel-like 3D Biomedical Graph Representations for Reconstruction and Generation},
+  author = {Prabhakar, Chinmay and Wittmann, Bastian and Amiranashvili, Tamaz and B{\"u}schl, Paul and de la Rosa, Ezequiel and McGinnis, Julian and Wiestler, Benedikt and Menze, Bjoern and Shit, Suprosanna},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  year = {2026},
+  note = {arXiv:2603.18797}
+}</code></pre>
+      <p class="citation-note">This entry follows the citation in the public code repository; please check the final proceedings metadata when available.</p>
+    </section>
+  </main>
+  <footer><span>© <span id="year">2026</span> Chinmay Prabhakar</span><a href="../../">← Homepage</a></footer>
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('copy-bibtex').addEventListener('click', async function () {
+    const source = document.querySelector('#bibtex code');
+    const copyButton = this;
+    try {
+      await navigator.clipboard.writeText(source.textContent);
+      copyButton.textContent = 'Copied!';
+      setTimeout(() => copyButton.textContent = 'Copy BibTeX', 1800);
+    } catch (err) {
+      const range = document.createRange();
+      range.selectNodeContents(source);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      copyButton.textContent = 'Select & copy (Ctrl+C)';
+    }
+  });
+</script>
+</body>
+</html>

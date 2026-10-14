@@ -34,3 +34,35 @@ p{margin:0 0 1rem}.eyebrow,.kicker{font-size:.75rem;font-weight:760;letter-spaci
 @media (max-width:760px){.wrap{width:min(100% - 32px,1020px)}.nav{align-items:flex-start;flex-direction:column;gap:7px;padding:17px 0;min-height:0}.nav-links{gap:7px 19px}.hero{grid-template-columns:minmax(0,1fr) 155px;gap:22px;padding:43px 0}.portrait{width:155px;height:155px}.section{margin:48px 0}.featured-work{grid-template-columns:1fr}.featured-main{padding:25px}.featured-figure{padding:15px}.featured-figure .figure-frame{min-height:165px}.project-tile{grid-template-columns:1fr}.resources{flex-direction:column;align-items:stretch}.resource-links{display:flex;flex-wrap:wrap}.project-overview{margin:35px 0 52px}.project-intro{margin:45px auto 20px}}
 @media (max-width:570px){body{font-size:15px}.nav-links a{font-size:.83rem}.hero{display:flex;flex-direction:column-reverse;align-items:flex-start}.hero h1{font-size:2.65rem}.portrait{width:135px;height:135px}.hero-tagline{font-size:1.06rem}.section-heading{align-items:flex-start;flex-direction:column;gap:9px}.section-aside{text-align:left}.publication{padding:19px}.timeline-item{grid-template-columns:1fr;gap:4px}.pub-year{margin-left:0}.step-grid{grid-template-columns:1fr}.project-intro h1{font-size:3.45rem}.project-overview{padding:12px}.project-buttons{gap:7px}.project-buttons a{padding:8px 12px}.citation-heading{align-items:flex-start}.bibtex{font-size:.73rem;padding:16px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* MICCAI project pages and project directory additions */
+.project-tile + .project-tile{margin-top:20px}
+.project-tile-copy .tile-long-title{font-weight:600;color:var(--ink);margin:0 0 7px}
+.project-tile-visual{min-width:0;background:#f2f8f8;border-radius:10px;padding:15px}
+.project-tile-visual .figure-frame{min-height:220px}
+.project-tile-visual .remote-image{max-height:320px}
+.project-intro h1.miccai-title{font-size:clamp(2.25rem,5.2vw,3.8rem);line-height:1.12;max-width:870px;margin-left:auto;margin-right:auto}
+.result-visual .figure-frame{padding:12px;border:1px solid var(--line);min-height:230px}
+.result-visual .remote-image{max-height:650px}
+/* Conceptual workflow for the MICCAI 2023 work, clearly not represented as an original publication figure */
+.research-flow{display:flex;align-items:stretch;gap:7px;padding:24px 17px;border-radius:14px;background:linear-gradient(140deg,#f0f8f8,#e5f2f5);border:1px solid #d6e7eb}
+.research-flow .flow-step{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:16px 7px;text-align:center;background:white;border:1px solid #d6e4e8;border-radius:10px}
+.flow-step strong{font-size:.85rem;line-height:1.3;color:var(--ink)}
+.flow-step>span:last-child{font-size:.71rem;line-height:1.4;color:var(--muted)}
+.flow-icon{font-size:2rem;font-weight:650;color:var(--accent);line-height:1.3}
+.flow-arrow{align-self:center;flex:none;color:#478a98;font-size:1.3rem}
+.research-flow.is-compact{padding:13px 8px;gap:3px}
+.research-flow.is-compact .flow-step{padding:12px 4px}
+.research-flow.is-compact .flow-step strong{font-size:.7rem}
+.research-flow.is-compact .flow-step>span:last-child{font-size:.65rem}
+.research-flow.is-compact .flow-icon{font-size:1.35rem}
+.research-flow.is-compact .flow-arrow{font-size:.8rem}
+.preview .research-flow{margin-top:17px}
+.evidence-panel>.citation-note{margin-top:12px;color:var(--muted)!important}
+.metric-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:17px}
+.metric-row article{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:2px}
+.metric-row strong{font-size:2.35rem;color:var(--accent-dark);line-height:1.3}
+.metric-row span{color:var(--muted);font-size:.85rem}
+.metric-row .metric-label{color:var(--ink);font-size:.84rem;font-weight:700}
+@media(max-width:940px){.research-flow{flex-wrap:wrap;gap:8px}.research-flow .flow-step{flex:1 1 25%;min-width:140px}.research-flow .flow-arrow{display:none}}
+@media(max-width:570px){.research-flow{padding:12px;display:grid;grid-template-columns:1fr;gap:7px}.research-flow .flow-step{flex:auto;min-width:0}.research-flow .flow-arrow{display:none}.research-flow.is-compact{display:grid;grid-template-columns:1fr;gap:6px}.research-flow.is-compact .flow-step{padding:10px}.metric-row{grid-template-columns:1fr}.project-tile-visual{padding:9px}}

@@ -85,3 +85,33 @@ p{margin:0 0 1rem}.eyebrow,.kicker{font-size:.75rem;font-weight:760;letter-spaci
 .project-nav-papers{margin:16px auto 0;text-align:center;font-size:.83rem;color:var(--muted)}
 .project-nav-papers a{font-weight:650}
 @media(max-width:760px){.hero{padding-bottom:30px}.project-tile .research-flow.is-compact{min-height:auto}}
+
+/* Published paper figures */
+.pdf-figure-embed { overflow:hidden; border-radius:10px; border:1px solid var(--line); background:#fff; }
+.pdf-figure-embed object { width:100%; height:490px; display:block; }
+.pdf-preview-block {margin-top:18px;}
+.pdf-preview-block .pdf-figure-embed object { height:420px; }
+.pdf-tile {min-height:210px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:16px;padding:25px;background:#f5f9fb;border:1px solid var(--line);border-radius:10px;text-align:center;}
+.pdf-tile p {font-weight:750;color:var(--ink);margin:0;}
+.pdf-tile a {font-weight:700;}
+.inline-figure-block { margin-top:18px; }
+.inline-figure-block .figure-frame {min-height:190px;padding:12px;border:1px solid var(--line);}
+.inline-figure-block .remote-image {max-height:440px;}
+.pdf-overview .kicker {margin:0 0 15px;}
+@media(max-width:570px) {.pdf-figure-embed object {height:360px;} .pdf-preview-block .pdf-figure-embed object{height:310px;}}
+
+/* Original figures cropped directly from the published VesselFormer PDF. */
+.original-figure-gallery {display:grid;grid-template-columns:1fr;gap:28px}
+.original-figure-gallery .original-paper-figure {padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--paper,#fff)}
+.original-figure-gallery .figure-frame {min-height:160px}
+.original-figure-gallery .remote-image {max-height:720px}
+.project-tile-visual .original-paper-figure .figure-frame {min-height:110px}
+.original-paper-figure .figure-frame {min-height:130px}
+@media (max-width:570px) {.original-figure-gallery .original-paper-figure {padding:9px}}
+
+/* Original MICCAI 2023 paper figures, locally served as image assets. */
+.project-tile-visual .original-paper-figure .figure-frame{min-height:120px}
+.original-figures-section>.original-figure-gallery{display:grid;grid-template-columns:1fr;gap:24px;margin-top:24px}
+.original-figures-section .original-paper-figure{border:1px solid var(--line);background:#fff;border-radius:12px;padding:16px}
+.original-figures-section .figure-frame{min-height:180px}
+@media(max-width:570px){.original-figures-section .original-paper-figure{padding:10px}}

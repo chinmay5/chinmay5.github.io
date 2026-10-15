@@ -1,25 +1,14 @@
-# My Personal Website
+# Personal website
 
 Personal academic website hosted with GitHub Pages.
 
 ## Structure
 
-- `index.html` — homepage and publications
+- `index.html` — homepage
 - `style.css` — shared styles
-- `projects/index.html` — project directory
-- `projects/` — individual research project pages
-- `assets/` — static assets
+- `projects/` — project pages
+- `assets/` — images and documents
 
-## Local preview
+## Publishing
 
-From the repository root, run:
-
-```bash
-python -m http.server 8000
-```
-
-Open `http://localhost:8000` in a web browser.
-
-## Deployment
-
-Changes are published using GitHub Pages from the configured publishing branch.
+The site uses static HTML and CSS. Updates are published through the GitHub Pages repository.

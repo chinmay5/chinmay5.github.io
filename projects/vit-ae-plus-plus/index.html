@@ -1,27 +1,28 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f9fafb">
-<meta name="description" content="ViT-AE++: Improving Vision Transformer Autoencoder for Self-Supervised Medical Image Representations — research project page and publication resources.">
-<meta property="og:title" content="ViT-AE++ | Research project">
-<meta property="og:description" content="Improving self-supervised image representations with structured reconstruction, complementary contrastive learning and a volumetric 3D extension.">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f9fafb" name="theme-color"/>
+<meta content="ViT-AE++: Improving Vision Transformer Autoencoder for Self-Supervised Medical Image Representations — research project page and publication resources." name="description"/>
+<meta content="ViT-AE++ | Research project" property="og:title"/>
+<meta content="Improving self-supervised image representations with structured reconstruction, complementary contrastive learning and a volumetric 3D extension." property="og:description"/>
 <title>ViT-AE++ | Chinmay Prabhakar</title>
-<link rel="stylesheet" href="../../style.css?v=20261014d">
+<link href="../../style.css?v=20261014originalfigures" rel="stylesheet"/>
 </head>
 <body>
-<nav class="nav wrap" aria-label="Main navigation"><a class="brand" href="../../index.html">Chinmay Prabhakar<span class="brand-dot">.</span></a><div class="nav-links"><a href="../../index.html">Home</a><a href="../index.html">Projects</a><a href="../../index.html#publications">Publications</a><a href="#citation">Citation</a></div></nav>
+<nav aria-label="Main navigation" class="nav wrap"><a class="brand" href="../../index.html">Chinmay Prabhakar<span class="brand-dot">.</span></a><div class="nav-links"><a href="../../index.html">Home</a><a href="../index.html">Projects</a><a href="../../index.html#publications">Publications</a><a href="#citation">Citation</a></div></nav>
 <main class="wrap project-layout">
 <header class="project-intro">
 <p class="eyebrow">MIDL 2023 · PMLR Vol. 227</p>
 <h1 class="miccai-title">ViT-AE++</h1>
 <p class="project-subtitle">Improving Vision Transformer Autoencoder for Self-supervised Medical Image Representations</p>
 <p class="project-authors"><a href="../../index.html">Chinmay Prabhakar</a> · Hongwei Li · Jiancheng Yang · Suprosanna Shit · Benedikt Wiestler · Bjoern Menze</p>
-<div class="project-buttons"><a class="primary-button" href="https://proceedings.mlr.press/v227/prabhakar24b.html" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://proceedings.mlr.press/v227/prabhakar24b/prabhakar24b.pdf" target="_blank" rel="noopener noreferrer">PDF ↗</a><a href="https://github.com/chinmay5/vit_ae_plus_plus" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="#citation">BibTeX ↓</a></div>
+<div class="project-buttons"><a class="primary-button" href="https://proceedings.mlr.press/v227/prabhakar24b.html" rel="noopener noreferrer" target="_blank">Paper ↗</a><a href="https://proceedings.mlr.press/v227/prabhakar24b/prabhakar24b.pdf" rel="noopener noreferrer" target="_blank">PDF ↗</a><a href="https://github.com/chinmay5/vit_ae_plus_plus" rel="noopener noreferrer" target="_blank">Code ↗</a><a href="#citation">BibTeX ↓</a></div>
 <p class="project-nav-papers">Presented at MIDL 2023; indexed in the PMLR 227 proceedings listing.</p>
 </header>
-<section class="project-overview" aria-label="Method summary"><p class="kicker">Method at a glance</p><div class="research-flow vitae-flow" aria-label="Conceptual steps in the ViT-AE++ approach" role="img"><div class="flow-step"><span class="flow-icon" aria-hidden="true">▦</span><strong>Medical image</strong><span>2D or 3D volume</span></div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-step"><span class="flow-icon" aria-hidden="true">▤</span><strong>Masked views</strong><span>Random patches</span></div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-step"><span class="flow-icon" aria-hidden="true">◈</span><strong>Shared ViT</strong><span>Feature encoder</span></div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-step"><span class="flow-icon" aria-hidden="true">◫</span><strong>Decoder</strong><span>Image recovery</span></div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-step"><span class="flow-icon" aria-hidden="true">⇄</span><strong>Two objectives</strong><span>Structure + contrast</span></div></div><p class="fig-caption">Illustrative summary of ViT-AE++; not an original paper figure. The complete two-branch architecture is shown in Figure 1 of the paper. <a href="https://proceedings.mlr.press/v227/prabhakar24b/prabhakar24b.pdf" target="_blank" rel="noopener noreferrer">Original paper ↗</a></p></section>
+<section aria-label="Original paper figure" class="project-overview"><div class="figure-frame"><img alt="ViT-AE++ Figure 1 (original paper architecture)." class="remote-image" decoding="async" loading="lazy" src="https://ar5iv.labs.arxiv.org/html/2301.07382/assets/fig/main_ViT.png"/><div class="figure-error"><span>Paper figure could not be loaded.</span><a href="https://ar5iv.labs.arxiv.org/html/2301.07382/assets/fig/main_ViT.png" rel="noopener noreferrer" target="_blank">Open original figure ↗</a></div></div><p class="fig-caption">ViT-AE++ Figure 1 (original paper architecture).</p></section>
 <section class="project-content" id="overview"><p class="kicker">Overview</p><h2>Why this work matters</h2><p class="large-lead">Masked vision transformer autoencoders learn image representations without manual annotation. ViT-AE++ improves this approach for 2D and 3D medical images by complementing pixel reconstruction with structure-aware auxiliary objectives and representation alignment across two masked views.</p></section>
 <section class="project-content"><p class="kicker">Approach</p><h2>How the method works</h2><div class="step-grid"><article><span>01</span><h3>Masked views</h3><p>Create randomly masked views of a 2D image or 3D volume and encode the visible patches.</p></article>
 <article><span>02</span><h3>Structure-aware recovery</h3><p>Reconstruct the input with pixel-level and auxiliary perceptual and edge-aware losses.</p></article>
@@ -29,8 +30,8 @@
 <section class="project-content"><p class="kicker">Research directions</p><h2>Contributions and applications</h2><div class="step-grid simple"><article><h3>Annotation-free pretraining</h3><p>Learn useful image features before task-specific annotation or fine-tuning.</p></article>
 <article><h3>2D and 3D imaging</h3><p>Extend the masked-autoencoding strategy to volumetric medical images.</p></article>
 <article><h3>Reconstruction + representation</h3><p>Jointly improve structural reconstruction and agreement between masked-view embeddings.</p></article></div></section>
-<section class="project-content resources"><div><p class="kicker">Resources</p><h2>Paper and implementation</h2><p>Read the published paper for the full methodology, experimental evaluation, and original figures. The public GitHub repository includes the research code.</p></div><div class="resource-links"><a href="https://proceedings.mlr.press/v227/prabhakar24b.html" target="_blank" rel="noopener noreferrer">Published paper ↗</a><a href="https://proceedings.mlr.press/v227/prabhakar24b/prabhakar24b.pdf" target="_blank" rel="noopener noreferrer">PDF ↗</a><a href="https://github.com/chinmay5/vit_ae_plus_plus" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></div></section>
-<section class="project-content citation" id="citation"><div class="citation-heading"><div><p class="kicker">Reference</p><h2>Citation</h2></div><button type="button" class="copy-button" id="copy-citation">Copy BibTeX</button></div><pre class="bibtex" id="bibtex"><code>@InProceedings{pmlr-v227-prabhakar24b,
+<section class="project-content resources"><div><p class="kicker">Resources</p><h2>Paper and implementation</h2><p>Read the published paper for the full methodology, experimental evaluation, and original figures. The public GitHub repository includes the research code.</p></div><div class="resource-links"><a href="https://proceedings.mlr.press/v227/prabhakar24b.html" rel="noopener noreferrer" target="_blank">Published paper ↗</a><a href="https://proceedings.mlr.press/v227/prabhakar24b/prabhakar24b.pdf" rel="noopener noreferrer" target="_blank">PDF ↗</a><a href="https://github.com/chinmay5/vit_ae_plus_plus" rel="noopener noreferrer" target="_blank">GitHub repository ↗</a></div></section>
+<section class="project-content citation" id="citation"><div class="citation-heading"><div><p class="kicker">Reference</p><h2>Citation</h2></div><button class="copy-button" id="copy-citation" type="button">Copy BibTeX</button></div><pre class="bibtex" id="bibtex"><code>@InProceedings{pmlr-v227-prabhakar24b,
   title = {{ViT-AE++}: Improving Vision Transformer Autoencoder for Self-supervised Medical Image Representations},
   author = {Prabhakar, Chinmay and Li, Hongwei and Yang, Jiancheng and Shit, Suprosanna and Wiestler, Benedikt and Menze, Bjoern},
   booktitle = {Medical Imaging with Deep Learning},
@@ -43,7 +44,7 @@
 }</code></pre><p class="citation-note">Use the citation details from the publisher if the publication record is updated.</p></section>
 <p class="back-line"><a href="../index.html">← All projects</a></p>
 </main>
-<footer class="site-footer wrap"><span>© <span data-current-year>2026</span> Chinmay Prabhakar</span><a href="../../index.html">Home ↑</a></footer>
+<footer class="site-footer wrap"><span>© <span data-current-year="">2026</span> Chinmay Prabhakar</span><a href="../../index.html">Home ↑</a></footer>
 <script>document.querySelectorAll('.remote-image').forEach(img=>{const frame=img.closest('.figure-frame');const fail=()=>frame?.classList.add('image-failed');const load=()=>frame?.classList.add('image-ready');img.addEventListener('error',fail);img.addEventListener('load',load);if(img.complete){if(img.naturalWidth)load();else fail()}});document.querySelectorAll('.portrait img').forEach(img=>{img.addEventListener('error',()=>img.closest('.portrait')?.classList.add('image-failed'));if(img.complete&&!img.naturalWidth)img.closest('.portrait')?.classList.add('image-failed')});document.querySelectorAll('[data-current-year]').forEach(el=>el.textContent=new Date().getFullYear());</script>
 <script>document.getElementById('copy-citation').addEventListener('click',async function(){const el=document.querySelector('#bibtex code');const txt=el.textContent;try{await navigator.clipboard.writeText(txt);this.textContent='Copied';}catch(e){const sel=window.getSelection();const range=document.createRange();range.selectNodeContents(el);sel.removeAllRanges();sel.addRange(range);this.textContent='Select and copy';}})</script>
 </body></html>
